@@ -12,20 +12,24 @@
                <div *ngFor="let i of data">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label  for="" class="form-label">book name</label>
-                    <input class="form-control" type="text" name=""value="{{i.bookname}}" id="">
+                    <input class="form-control" type="text" name=""value="{{i.bookname}}"[(ngModel)]="i.bookname" id="">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label  for="" class="form-label">discription</label>
-                    <input class="form-control" type="text" name=""value="{{i.bookdiscription}}" id="">
+                    <input class="form-control" type="text" name=""value="{{i.bookdiscription}}"[(ngModel)]="i.bookdiscription" id="">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label  for="" class="form-label">page</label>
-                    <input class="form-control" type="text" name=""value="{{i.pages}}" id="">
+                    <input class="form-control" type="text" name=""value="{{i.pages}}"[(ngModel)]="i.pages" id="">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label  for="" class="form-label">language</label>
-                    <input class="form-control" type="text" name=""value="{{i.language}}" id="">
+                    <input class="form-control" type="text" name=""value="{{i.language}}"[(ngModel)]="i.language" id="">
                 </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                   <button class="btn btn-primary"(click)="updatebook()">update</button>
+                </div>
+                
 
                </div>
             </div>
