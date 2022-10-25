@@ -4,22 +4,22 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Book Name</label>
-                    <input class="form-control" type="text" name="" id="">
+                    <input class="form-control" type="text" name="bookname" [(ngModel)]="bookname" id="">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Book Description</label>
-                    <input class="form-control" type="text" name="" id="">
+                    <input class="form-control" type="text" name="bookdiscription"[(ngModel)]="bookdiscription" id="">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Book Pages</label>
-                    <input class="form-control" type="text" name="" id="">
+                    <input class="form-control" type="text" name="pages"[(ngModel)]="pages" id="">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Book Language</label>
-                    <input class="form-control" type="text" name="" id="">
+                    <input class="form-control" type="text" name="language"[(ngModel)]="language" id="">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-success">submit</button>
+                    <button class="btn btn-success"(click)="readvalues()">submit</button>
                 </div>
             </div>
         </div>
