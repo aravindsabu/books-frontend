@@ -7,6 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddbooksComponent } from './addbooks/addbooks.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ViewbooksComponent } from './viewbooks/viewbooks.component';
+import {HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 const appRoutes:Routes=[
   {
     path:"",component:AddbooksComponent
@@ -26,7 +28,10 @@ const appRoutes:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
