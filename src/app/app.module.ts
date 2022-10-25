@@ -6,9 +6,13 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddbooksComponent } from './addbooks/addbooks.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ViewbooksComponent } from './viewbooks/viewbooks.component';
 const appRoutes:Routes=[
   {
     path:"",component:AddbooksComponent
+  },
+  {
+    path:"ok",component:ViewbooksComponent
   }
 ]
 
@@ -16,7 +20,8 @@ const appRoutes:Routes=[
   declarations: [
     AppComponent,
     NavbarComponent,
-    AddbooksComponent
+    AddbooksComponent,
+    ViewbooksComponent
   ],
   imports: [
     BrowserModule,
